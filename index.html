@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/b5d8e9d249.js" crossorigin="anonymous"></script>
+  <title>Cv (trabajo final)</title>
+</head>
+<body>
+  <header class="botones">
+    <button id="boton_secreto" class="boton_secreto" onclick="funcionSecreta()"><i class="fa-solid fa-key"></i></i>Secreto</button>
+    <button id="boton_truco" class="boton_truco" onclick="botonTruco()"><i class="fa-solid fa-wand-magic-sparkles"></i></i>Truco</button>
+    <button id="boton-lateral" class="boton-lateral" onclick="intercambiarLateral()"><i class="fa-solid fa-bolt"></i>Lateral</button>
+  </header>
+  <div id="contenedor" class="contenedor">
+    <aside class="lateral" id="lateral">
+      <figure class="foto">
+        <img src="./img/66.jpg"      alt="foto cv">
+      </figure>     
+      <section class="nombre">
+        <h1>Carmen rodriguez</h1>
+        <h3>diseño grafico</h3>
+      </section>
+      <section class="tecnico">
+        <h2>habilidades tecnicas</h2>
+        <ul>
+            <li>photoshop</li>
+            <li>illustrator</li>
+            <li>powerpoint</li>
+            <li>corel draw</li>
+        </ul>
+      </section>
+      <section class="idiomas">
+          <h2>Idiomas</h2>
+          <ul>
+              <li>ingles <strong>avanzado</strong></li>
+              <li>español <strong>nativo</strong></li>
+          </ul>
+      </section>
+      <section class="personal">
+          <h2>Personal</h2>
+          <ul>
+              <li>Buena predisposición</li>
+              <li>adaptable</li>
+              <li>proactiva</li>
+          </ul>
+      </section>
+      <section class="contacto">
+          <h2>Contacto</h2>
+          <ul>
+              <li><i class="fa-sharp fa-solid fa-envelope"></i>   carmen.rodriguez@example.com</li>
+              <li><i class="fa-solid fa-phone"></i>   +54 11 99 99 99</li>
+              <li><i class="fa-solid fa-location-dot"></i>    Ciudad de Buenos Aires (CABA)</li>
+          </ul>
+      </section> 
+    </aside>
+    <main class="central">
+      <section class="sobreMi">
+        <h2>sobre mi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi facilis voluptate earum ratione ab. 
+         Possimus non ullam, accusantium ut libero sed? Itaque delectus aliquid numquam iste, deserunt laudantium illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio natus sunt! Error voluptas voluptate, itaque voluptatem quos voluptatibus esse aliquam culpa. Ut, quae harum. Sint eos quod at harum.</p>
+      </section>  
+      <section class="formacion">
+        <h2>capacitación</h2>
+        <dl>
+          <dt>
+            <span>curso de...</span>
+          </dt>
+            <dd>
+              <span>institucion</span>
+            </dd>
+          <dt>
+            <span>curso de...</span>
+          </dt>
+           <dd>
+             <span>institucion</span>
+           </dd>
+          <dt>
+             <span>curso de...</span>
+          </dt>
+           <dd>
+             <span>institucion</span>
+           </dd>
+        </dl>
+      </section>
+      <section class="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <ol>
+            <li>empresa, puesto, años</li>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptatem libero eum esse architecto! Neque, rem! Minus autem sequi omnis neque sunt mollitia maxime, ducimus facilis accusamus alias cupiditate aliquam.</p>
+            <li>empresa, puesto, años</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio dolor debitis! Quia ipsam commodi laboriosam tenetur ducimus nostrum explicabo? Quos ex inventore eum placeat tempora reiciendis et accusamus quibusdam?</p>
+            <li>empresa, puesto, años</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio dolor debitis! Quia ipsam commodi laboriosam tenetur ducimus nostrum explicabo? Quos ex inventore eum placeat tempora reiciendis et accusamus quibusdam?</p>
+            <li>empresa, puesto, años</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio dolor debitis! Quia ipsam commodi laboriosam tenetur ducimus nostrum explicabo? Quos ex inventore eum placeat tempora reiciendis et accusamus quibusdam?</p>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <nav>
+      <ul class="main-nav">
+        <li class="main-nav__item"><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a></li>
+        <li class="main-nav__item"><a href="https://ar.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li class="main-nav__item"><a href="https://www.instagram.com/"><i class="fa-solid fa-camera-retro"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+<script src="js/function.js"></script>
+</body>
+</html>

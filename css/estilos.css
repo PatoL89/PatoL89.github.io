@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botones {
+    display:flex;
+    background-color: rgb(6, 6, 82);
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.botones div {
+    width: 10%;
+    background-color: grey;
+    padding: 2px;
+}
+
+.boton_secreto{
+    display:none;
+}
+.boton_secreto.ver{
+    display: block;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "lateral centro centro";
+}
+
+.contenedor.derecha {
+    display: grid;
+    grid-template-areas:
+        "centro centro lateral";
+}
+
+.lateral {
+    grid-area: lateral;
+    background-color: #E4C142;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.lateral h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: overline;
+    margin-top: 10%;
+}
+
+.lateral h2 {
+    text-transform: uppercase;
+    text-decoration: overline;
+    letter-spacing: 1px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.lateral h3 {
+    text-transform: uppercase;
+}
+
+.lateral ul {
+    list-style: none;
+}
+
+.lateral li {
+    text-transform: capitalize;
+}
+
+.foto {
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.foto img {
+    border-radius: 50%;
+    width: 60%;
+}
+
+.nombre{
+    color: #EEEEEE;
+}
+.tecnico ul{
+    list-style: inside;
+}
+
+.personal ul{
+    list-style: inside circle;
+}
+.contacto li{
+    margin-bottom: 5%;
+}
+
+
+
+.central {
+    grid-area: centro;
+    display: grid;
+    grid-template-areas: 
+    "sobre_mi"
+    "capacitacion "
+    "experiencia";
+    align-content: space-around;
+    text-transform: capitalize;
+}
+
+.central h2{
+    display:grid;
+    align-content: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.sobreMi{
+    grid-area: sobre_mi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(53, 49, 49);
+    color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.formacion {
+    grid-area: capacitacion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formacion dl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formacion dt {
+    width: 50%;
+}
+
+.formacion dd {
+    width: 50%;
+    font-weight: bold;
+}
+
+.experiencia {
+    grid-area: experiencia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencia ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 15px;
+}
+
+.experiencia li {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.main-nav {
+    list-style: none;
+    background-color: #13140E;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+    margin: 5px;
+}
+
+.main-nav__item {
+    display: flex;
+    background-color: #EEEEEE;
+    align-items: center;
+}
+
+.main-nav__item a{
+    color: black;
+    padding: 5px;
+    text-decoration-line: overline underline;
+}
+
+.main-nav__item a:hover {
+    color:blue;
+}
+
+.main-nav__item a:active {
+    color: chocolate;
+}
